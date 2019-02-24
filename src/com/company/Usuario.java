@@ -26,8 +26,15 @@ public class Usuario {
     public boolean isModerador() {
         return moderador;
     }
+
+    @Override
+    public String toString() {
+        return "Usuario: " + nome + ", Tomador: " + moderador;
+    }
+
     public static List<Usuario> criarListaExemploUsuarios(){
         ArrayList<Usuario> lista = new ArrayList<>();
+        lista.add(new Usuario("Rodrigo", 3));
         lista.add(new Usuario("Jeoronei", 10));
         lista.add(new Usuario("Pedro", 5));
         lista.add(new Usuario("Thiago", 7));
