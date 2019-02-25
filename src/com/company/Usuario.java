@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class Usuario {
@@ -13,6 +12,11 @@ public class Usuario {
         this.pontos = pontos;
         this.nome = nome;
         this.moderador = false;
+    }
+    public Usuario(String nome, int pontos, boolean moderador) {
+        this.pontos = pontos;
+        this.nome = nome;
+        this.moderador = moderador;
     }
     public String getNome() {
         return nome;
@@ -38,6 +42,17 @@ public class Usuario {
         lista.add(new Usuario("Jeoronei", 10));
         lista.add(new Usuario("Pedro", 5));
         lista.add(new Usuario("Thiago", 7));
+
+        return lista;
+    }
+
+    public static List<Usuario> criarListaExemploUsuarios2(){
+        ArrayList<Usuario> lista = new ArrayList<>();
+        lista.add(new Usuario("Rodrigo Turini", 120, true));
+        lista.add(new Usuario("Guilherme Silveira", 90));
+        lista.add(new Usuario("Sergio Lopes", 120));
+        lista.add(new Usuario("Adriano Almeida", 100));
+        lista.add(new Usuario("Paulo Silveira", 150, true));
 
         return lista;
     }

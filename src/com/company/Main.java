@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.Capitulos.Capitulo8;
+import com.company.Capitulos.Capitulo9;
 
 import java.util.*;
 import java.util.function.*;
@@ -19,6 +20,7 @@ public class Main {
         Capitulo6();
         Capitulo7();
         new Capitulo8();
+        new Capitulo9();
     }
 
     // Capitulo 2
